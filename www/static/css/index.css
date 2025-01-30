@@ -507,7 +507,7 @@ footer {
     scale: 0.8;
     bottom: 0;
     z-index: 1000;
-    width: 50%;
+    width: 100%;
     border: 3px rgba(0, 0, 0, 0.9) solid;
     text-align: center;
     border-radius: 35px;
@@ -555,7 +555,7 @@ footer {
     #offer-dialog {
         scale: 0.5;
         top: 50px;
-        width: 110%;
+        width: 100%;
     }
 
     .swiper-wrapper {
