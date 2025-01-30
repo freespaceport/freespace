@@ -527,9 +527,9 @@ footer {
 
 @media screen and (max-width:1440px) {
     #offer-dialog {
-        scale: 0.95;
+        scale: 1;
         bottom: 0;
-        width: 60%;
+        width: 100%;
     }
 }
 
@@ -538,7 +538,7 @@ footer {
         scale: 0.6;
         bottom: 0;
         top: 0;
-        width: 60%;
+        width: 100%;
     }
 }
 
@@ -546,7 +546,7 @@ footer {
     #offer-dialog {
         scale: 0.55;
         bottom: 0;
-        width: 70%;
+        width: 100%;
     }
 }
 
