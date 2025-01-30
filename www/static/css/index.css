@@ -326,6 +326,7 @@ main {
 footer {
     background: linear-gradient(to bottom, rgb(44, 44, 44), rgb(34, 36, 35));
     padding-right: 100px;
+    color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
