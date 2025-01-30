@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студия креативного творчества</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../static/js/index.js" defer></script>
+</head>
+
+<body>
+    <!--Шапка страницы-->
+    <header>
+
+        <!--Логотип-->
+        <div class="logo">
+            <a href="index.html"><img src="../static/img/logo.png" height="50px" width="150px"></a>
+            <a href="index.html" id="text-link-h" title="Главная страница">Old Miniatures</a>
+        </div>
+
+        <!--Навигация по сайту-->
+        <nav class="navbar-heading1">
+            <a id="about-link-h" href="/about.html">О себе</a>
+            <a id="projects-link-h" href="projects.html">Проекты</a>
+            <a id="contacts-link-h" href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="sig">
+            <button id="enter-button">Войти</button>
+            <button>Зарегестрироваться</button>
+        </div>
+
+        <!--Меню-->
+        <div class="menubar-heading1">
+            <img src="../static/img/menubar.svg.png" onclick="showMenu()" title="Меню" id="menu-img-bar">
+
+            <dialog id="menu-dialog">
+                <ul style="list-style-type: none;">
+                    <button id="close-menu" onclick="closeMenu()">×</button>
+                    <li>
+                        <a id="main-link-m">Главная страница</a>
+                    </li>
+
+                    <li>
+                        <a id="about-link-m" href="about.html">О себе</a>
+                    </li>
+
+                    <li>
+                        <a id="projects-link-m" href="projects.html">Проекты</a>
+                    </li>
+
+                    <li>
+                        <a id="contacts-link-m" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+                <img id="menu-logo" src="../static/img/avpic.png" height="50px">
+            </dialog>
+        </div>
+
+    </header>
+
+    <!--Основная часть-->
+    <main>
+        <!--Заголовок-->
+        <div id="main-title">
+            <h1>Мастерская креативных решений</h1>
+        </div>
+
+        <!--Ознакомление-->
+        <div>
+            <div id="welcome-head-text">
+                <h1 id="welcome">Добро пожаловать к нам!</h1>
+                
+            </div>
+
+            <div id="text-block-main-1">
+                <h2>О нас</h2>
+                <hr>
+                <div id="text-area-m">
+                <br><p><span style="padding-left: 20px;">На</span> нашем сайте вы найдете уникальные модели, созданные с душой и вниманием к мельчайшим деталям. Здесь вы можете заказать что-то уникальное и особенное, будь то подарок для близкого человека, или сувенир для себя.</p>
+                <br><p><span style="padding-left: 20px;">Наш</span> подход к работе отличается высокой концентрацией на деталях и стремлении к идеалу. Для нас очень важно, что каждая малейшая деталь работы соответсвовала вашим ожиданиям и даже превосходила их.</p>
+                <br><p style="margin-bottom: 50px;"><span style="padding-left: 20px;">В</span> нашем творческом уголке вас ждет коллекция разнообразных моделей: от мельчайших фигур до масштабной техники.</p>
+                <br><br><br>
+                <h2>Почему именно наш сайт?</h2>
+                <br><p>Во-первых, это гарантия качества — каждая модель создается с максимальной тщательностью и будет радовать вас долгие годы. Мы используем профессиональные инструменты для творчества.</p>
+                <br><p>В-третьих, мы уделяем особое внимание упаковке и доставке, чтобы ваши заказы прибыли в полной сохранности и без малейших повреждений.</p>
+                <br>
+                <br><p>Если вы ищете качественные и красивые модели, которые станут частью вашей коллекции и будут радовать вас своим внешним видом, вы находитесь в нужном месте.</p>
+                <br><br><p style="margin-bottom: 50px;">Заказывайте модели на нашем сайте и наслаждайтесь их красотой и мастертвом исполнения!</p><br><br><br>
+            </div>
+            </div>
+
+
+        </div>
+
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"> 
+                        <h1>Роспись фигур</h1> 
+                </div>
+
+                <div class="swiper-slide">
+                        <h1>Сборка масштабной техники</h1>
+                </div>
+
+                <div class="swiper-slide">
+
+                        <h1>Покраска техники</h1>
+                </div>
+            
+                
+                
+            </div>
+        </div>
+
+        <div id="offers">
+            <div id="frame-offers">
+                <button onclick="redirect1()" id="offer-btn">Сделать заказ</button><br><br>
+                <span>Посмотреть работы можно <a id="a1" href="projects.html" title="Наши работы">тут</a></span>
+                <dialog id="offer-dialog">
+                    <div>
+                        <button style="position: absolute; background: none; border: 2px solid black; right: 8px; top: 8px;" onclick="closeD()">Закрыть</button>
+                        <script>
+                            function closeD(){
+                                var elX = document.getElementById('offer-dialog');
+                                elX.close();
+                            }
+                        </script>
+                    </div>
+                    <div class="start-offer"><br>
+                        <h1>Оформление заказа работы от мастера</h1>
+                    </div>
+                    <br>
+                    <div class="text-dialog" style="line-height: 26px; padding-left: 7px; padding-right: 7px; padding-top: 5px;">
+                        <p>Нет ничего лучше чем пополнить свою коллекцию какой-либо фигуркой или же сделать кому-то подарок! </p>
+                        <p>Мы предлагаем вам удобный сервис. Все ваши требование будут учитываться с учетом возможных корректировок. Также, по вашему желанию, вы сможете контролировать процесс работы, получая фотоотчеты. <a href="../Наши условия.pdf" download>Подробнее о всех условиях</a>
+                        </p><br>
+                    </div>
+                    <br>
+                    <div class="text-dialog">
+                        <p style="line-height: 40px;">Для того чтобы оформить заказ, вам всего лишь необходимо отправить сообщение на <a href="mailto:freespace.contact.us@gmail.com">нашу почту</a></p>
+                    </div>
+                
+                    <div class="text-dialog"> 
+                        <p>С вами свяжутся как можно быстрее</p>
+                    </div>
+                
+                    <div class="text-dialog">
+                        <p>Вы можете ознакомиться с другими работами мастера <a href="projects.html">по ссылке</a></p>
+                    </div>
+                </dialog>
+                <script>
+                    function redirect1() {
+                        var offerMenu = document.getElementById('offer-dialog');
+                        offerMenu.show()
+                    }
+                </script>
+            </div>
+        </div>
+    </main>
+
+    <!--Подвал сайта-->
+    <footer>
+
+        <!--Дополнительно-->
+        <div id="contacts">
+            <br>
+            <span style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 34px; color: rgb(223, 253, 222); text-shadow: 0 0 5px rgba(255, 255, 255, 0.61); padding-right: 10%;">Контакты</span>
+            <br>
+            <div>
+                <span>Связаться с нами: </span>
+                <a href="mailto:freespace.contact.us@gmail.com" style="text-decoration: none; color: rgb(97, 126, 255); text-shadow: 1px 1px 1px black;">freespace.contact.us.info@gmail.com</a>
+            </div>
+
+        </div>
+
+        <!--Навигация-->
+        <nav id="f-navbar">
+            <a id="about-link-f" href="about.html">О себе</a>
+            <a id="projects-link-f" href="projects.html">Проекты</a>
+        </nav>
+    </footer>
+</body>
+</html>
