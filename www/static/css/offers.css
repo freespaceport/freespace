@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to left, #009999, #1df3bc);
+    color: #03180f;
+}
+
+.start {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color:rgba(0, 255, 255, 0.212);
+    height: 50px;
+    align-items: center;
+    padding-top: 8px;
+}
+
+body div p {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: auto;
+    margin-right: 50px;
+    text-align: center;
+    padding: 50PX;
+    background-color: aliceblue;
+    box-shadow: 20PX 20PX 30PX rgba(0, 0, 0, 0.777);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(41, 219, 210);
+    transition: color 1.1s;
+}
+
+a:hover {
+    color: #5273bb;
+}
+
+.start-offer {
+    background: linear-gradient(to left, grey, blue);
+    
+}

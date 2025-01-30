@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to left, rgb(255, 199, 146, 0.5), rgb(171, 242, 255, 0.5));
+    height: 50px;
+}
+
+header h1{
+    padding-top: 6px;
+    text-align: center;
+    animation: startAnimationHead 1.25s ;
+}
+
+.main-nav {
+    font-size: 18px;
+    font-family:'Arial Narrow', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    padding-left: 5px;
+
+    
+}
+
+#main-nav-first-link-home-page {
+    color: rgb(10, 10, 75);
+    text-decoration: none;
+    transition: color 1500ms;
+}
+
+#main-nav-first-link-home-page:hover {
+    color:blue;
+    transition: color 200ms;
+}
+
+main {
+    background-color: rgba(223, 223, 240, 0.8);
+}
+
+.next {
+    margin-left: 100px;
+    margin-right: 100px;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;   
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.288);
+    
+}
+
+.next-1 {
+    color: black;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.next hr {
+    opacity: 0.33;
+}
+
+@media screen and (max-width: 1024px) {
+    .next {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+}
+
+footer {
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    padding: 100px;
+    padding-bottom: 50px;
+    background: linear-gradient(to left, white, black);
+}
+
+footer nav {
+    padding-right: 100px;
+    font-size: 26px;
+}
+
+footer nav a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer nav p {
+    font-size: 18px;
+}
+
+footer nav a:hover {
+    color: blueviolet;
+}
+
+
+@keyframes startAnimationHead {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes startAnimationNavigation1 {
+    0% {
+        transform: translate(-600px, 0);
+    }
+    
+    100% {
+    }
+}
+
+@keyframes OpAnimation1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes startAnimationNavigation2 {
+    0% {
+        opacity: 0;
+        translate: -400px -20px;
+        transform: rotateX(90deg);  
+    }
+    
+    
+}
