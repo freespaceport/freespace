@@ -10,6 +10,7 @@ class Post(db.Model):
 
 @app.route("/")
 @app.route("/index.html")
+@app.route("/mainpg")
 def index():
     return render_template("index.html")
 
