@@ -403,7 +403,7 @@ footer {
 #offers button:hover {
     color: rgb(250, 239, 145);
     transition: color 1.4s;
-    border: 2px solid  rgb(250, 239, 145);
+    border: 2px solid rgb(250, 239, 145);
 }
 
 #offers button:active {
@@ -411,7 +411,7 @@ footer {
     color: white;
     box-shadow: 3px 3px 3px rgb(0, 0, 0);
     transition: none;
-    border: 2px solid ;
+    border: 2px solid  rgb(35, 8, 87);
 }
 
 #offers #a1 {
