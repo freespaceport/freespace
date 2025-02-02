@@ -377,6 +377,10 @@ footer {
     
 }
 
+#frame-offers span {
+    color: #fff;
+}
+
 @media screen and (max-width:1024px){
     #offers {
         padding-top: 100px;
