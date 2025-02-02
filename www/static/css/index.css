@@ -409,6 +409,7 @@ footer {
     transform: translate(0px, 3px);
     color: white;
     box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    transition: none;
 }
 
 #offers #a1 {
